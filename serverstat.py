@@ -154,6 +154,12 @@ if __name__ == "__main__":
 					'swaptotal': swaptotal,
 					'swapfree': swapfree,
 					'dirty': dirty})
+		                previous['cpuuser'] = cpuuser
+                		previous['cpusystem'] = cpusystem
+		                previous['cpuidle'] = cpuidle
+                		previous['iowait'] = iowait
+		                previous['steal'] = steal
+                		previous['guests'] = guests 
 			time.sleep(1)
 		except Exception, ex:
 			print str(ex)
