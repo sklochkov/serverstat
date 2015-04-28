@@ -3,11 +3,11 @@
 %define _specdir	.
 %define _rpmdir		.
 
-Name:		server resource usage monitor
+Name:		serverstat
 Version:	0.1
 Release:	1%{dist}
 
-Summary:	CPU usage monitor
+Summary:	server resource usage monitor
 License:	MIT
 Group:		System Environment/Libraries
 Distribution:	Red Hat Enterprise Linux
