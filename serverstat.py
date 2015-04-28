@@ -107,13 +107,15 @@ if __name__ == "__main__":
 			f.close()
 			cpu_res = CPU_RE.match(cpu_raw)
 			if not cpu_res:
-				print "Invalid CPU regex"
+				cpu_res = CPU_LEGACY_RE.match(cpu_raw)
+				guests = 0
+			else:
+				guests = float(cpu_res.group(9))
 			cpuuser = float(cpu_res.group(1))
 			cpusystem = float(cpu_res.group(3))
 			cpuidle = float(cpu_res.group(4))
 			iowait = float(cpu_res.group(5))
 			steal = float(cpu_res.group(8))
-			guests = float(cpu_res.group(9))
 			f = open('/proc/meminfo')
 			for line in f:
 				res = MEMINFO_RE.match(line)
