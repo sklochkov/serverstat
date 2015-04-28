@@ -5,7 +5,7 @@
 
 Name:		serverstat
 Version:	0.1
-Release:	3%{dist}
+Release:	4%{dist}
 
 Summary:	server resource usage monitor
 License:	MIT

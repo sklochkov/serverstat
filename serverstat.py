@@ -11,6 +11,7 @@ import re
 import time
 
 CPU_RE = re.compile("""^cpu\s+(\d+)\s+(\d+)\s+(\d+)\s+(\d+)\s+(\d+)\s+(\d+)\s+(\d+)\s+(\d+)\s+(\d+)""")
+CPU_LEGACY_RE = re.compile("""^cpu\s+(\d+)\s+(\d+)\s+(\d+)\s+(\d+)\s+(\d+)\s+(\d+)\s+(\d+)\s+(\d+)""")
 MEMINFO_RE = re.compile("""^([a-zA-Z0-9\(\)_]+):\s+(\d+)\s.*$""")
 
 # 10.625,3.625,85.750,0.0,0.0,0.0,0.0,0.0,1376.0,148.0,0.0,0.0,1226.0,3193.0
