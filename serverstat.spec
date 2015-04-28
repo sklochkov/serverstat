@@ -56,6 +56,8 @@ fi
 %files
 %defattr(-,root,root)
 %attr(0755,root,root) /usr/local/bin/serverstat.py
+%ghost %attr(0755,root,root) /usr/local/bin/serverstat.pyc
+%ghost %attr(0755,root,root) /usr/local/bin/serverstat.pyo
 %attr(0755,root,root) /etc/init.d/serverstat
 
 
